@@ -266,6 +266,17 @@ input[type="number"] {
       gap: 16px;
       padding-top: 32px;
 
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        color: var(--terracotta);
+        text-align: center;
+        font-weight: 300;
+        padding-top: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
       input {
         background-color: transparent;
         border: 0px;
