@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casamento Daniel e Marta 2025</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Marta e Daniel</h1>
+        <p>Setembro 20, 2025</p>
+        <h2 id="countdown"></h2>
+      </div>
+    </section>
+    <section class="cerimony">
+      <h1>Cerimónia</h1>
+      <p>Aqui podem encontrar todas as informações sobre o nosso grande dia!</p>
+      <div class="cerimony-content">
+        <div class="cerimony-card">
+          <h3>Recepção</h3>
+          <h6>Noivo</h6>
+          <div id="map-noivo" style="width: 100%; height: 200px"></div>
+          <p style="font-size: 1rem">
+            Travessa Joaquim Namorado, Lote 130, 2680-387 Unhos
+          </p>
+          <h6>Noiva</h6>
+          <div id="map-noiva" style="width: 100%; height: 200px"></div>
+          <p style="font-size: 1rem">Rua da Esperança nº1, 2680-434 Unhos</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="0.4"
+          height="600"
+          class="vertical-divider-svg"
+        >
+          <rect width="0.4" height="600" fill="var(--terracotta)" />
+        </svg>
+
+        <div class="cerimony-card">
+          <h3>Celebração</h3>
+          <h6>Início da cerimónia às 11 horas</h6>
+          <div id="map-igreja" style="width: 100%; height: 200px"></div>
+          <p style="font-size: 1rem">
+            Igreja de São Silvestre, Largo de São Silvestre, Unhos
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="0.4"
+          height="600"
+          class="vertical-divider-svg"
+        >
+          <rect width="0.4" height="600" fill="var(--terracotta)" />
+        </svg>
+
+        <div class="cerimony-card">
+          <h3>Copo de àgua</h3>
+          <h6>Brindamos juntos na Quinta das Riscas</h6>
+          <div id="map-quinta" style="width: 100%; height: 200px"></div>
+          <p style="font-size: 1rem">
+            Rua Luís de Camões, 117, St. Isidro de Pegões
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="confirmations">
+      <div class="confirmation-container">
+        <h1>Confirma a tua presença</h1>
+        <h2>até 31 de agosto</h2>
+        <form id="form" method="post">
+          <input type="text" placeholder="Nome" name="nome" />
+          <input type="email" placeholder="E-mail" name="email" />
+          <select name="idade" id="age">
+            <option disabled selected>Faixa etária</option>
+            <option value="0-3 anos">0-3 anos</option>
+            <option value="4-9 anos">4-9 anos</option>
+            <option value="Adulto">Adulto (+10 anos)</option>
+          </select>
+          <select name="dieta" id="diet">
+            <option disabled selected>Dieta</option>
+            <option value="Normal">Normal</option>
+            <option value="Vegetariano">Vegetariano</option>
+            <option value="Vegan">Vegan</option>
+          </select>
+          <select name="guests-number" id="guests-number">
+            <option disabled selected>Nº de convidados</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <div id="guests" class="guests"></div>
+          <button class="confirm-button" type="submit">Confirma</button>
+        </form>
+      </div>
+    </section>
+    <footer class="get-in-touch">
+      <h1>Contactos</h1>
+      <div class="contact-cards">
+        <div class="card">
+          <h2>Noivo</h2>
+          <p>+351 932958409</p>
+          <p>daniel.marquesedigital@gmail.com</p>
+        </div>
+        <div class="card">
+          <h2>Noiva</h2>
+          <p>+351 962275570</p>
+          <p>martasantosoliveiros@gmail.com</p>
+        </div>
+      </div>
+      <p style="text-align: center" id="copyright"></p>
+    </footer>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/maps.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/copyright.js"></script>
+  </body>
+</html>
