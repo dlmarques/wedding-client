@@ -6,7 +6,7 @@ guestsNumberInput.addEventListener("change", (e) => {
   guestsDiv.innerHTML = "";
   for (let i = 0; i < number; i++) {
     guestsDiv.innerHTML += `
-    <h2 style="padding-top: 8px;">Convidado ${i + 1}</h2>
+    <h2 style="padding-top: 8px;">Acompanhante ${i + 1}</h2>
       <div style="padding-bottom: 8px; display: flex; flex-direction: column; gap: 8px; align-items: center; width:100%">
         <input type="text"  id="guest-name-${i + 1}" name="guest-name-${
       i + 1
