@@ -73,17 +73,21 @@ document
     data.guests = guests;
 
     try {
-      const response = await fetch("http://localhost:3000/api/confirm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch(
+        "https://wedding-server-xjqv.onrender.com/api/confirm",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
 
       if (response.ok) {
-        const result = await response.json();
-        console.log("Success:", result);
+        const form = document.getElementById("form");
+        form.innerHTML = "";
+        form.innerHTML = `<p>Contamos contigo!</p>`;
       } else {
         console.error("Error:", response.status, response.statusText);
       }
