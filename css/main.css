@@ -20,45 +20,12 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-/* Topbar section */
-.topbar {
-  width: 100vw;
-  height: 150px;
-  background-color: var(--light-beige);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.topbar__menu {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  gap: 64px;
-  padding: 0;
-  margin: 0;
-}
-
-.topbar__item {
-  position: relative;
-}
-
-.topbar__link {
-  text-decoration: none;
-  color: var(--terracotta);
-  font-size: 1.2rem;
-  font-weight: bold;
-  transition: color 1s ease;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-}
-
 /* Hero section*/
 
 .hero {
   width: 100vw;
   height: 100vh;
-  background: url("../img/img1.jpeg") no-repeat center center / cover;
+  background: url("../img/img4.jpeg") no-repeat center center / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,13 +41,13 @@ input[type="number"] {
       text-align: center;
       margin-top: 0;
       font-weight: 100;
-
+      padding: 0 32px;
       @media (max-width: 440px) {
         font-size: 6rem;
       }
     }
     h2 {
-      font-family: "Lato", sans-serif;
+      font-family: "Meow Script", cursive;
       font-size: 4rem;
       color: var(--light-beige);
       text-align: center;
@@ -212,7 +179,7 @@ input[type="number"] {
 .confirmations {
   width: 100vw;
   height: 100vh;
-  background: url("../img/img3.jpeg") no-repeat center center / cover;
+  background: url("../img/img2.jpeg") no-repeat center center / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
