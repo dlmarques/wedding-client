@@ -7,21 +7,25 @@ guestsNumberInput.addEventListener("change", (e) => {
   for (let i = 0; i < number; i++) {
     guestsDiv.innerHTML += `
     <h2 style="padding-top: 8px;">Acompanhante ${i + 1}</h2>
-      <div style="padding-bottom: 8px; display: flex; flex-direction: column; gap: 8px; align-items: center; width:100%">
-        <input type="text"  id="guest-name-${i + 1}" name="guest-name-${
+      <div style="padding: 8px 0; display: flex; flex-direction: column; gap: 8px; align-items: center; width:100%">
+      <label for="guest-name-${i + 1}">Nome</label>  
+      <input type="text"  id="guest-name-${i + 1}" name="guest-name-${
       i + 1
-    }" placeholder="Nome" required>
+    }" placeholder="Escreve aqui o nome do acompanhante ${i + 1}" required>
+      <label for="guest-diet-${i + 1}">Intolerâncias alimentares</label>
+          <input
+            type="text"
+            name="guest-diet-${i + 1}"
+            placeholder="Escreve aqui as int. alimentares do acompanhante ${
+              i + 1
+            }"
+          />
+        <label for="guest-diet-${i + 1}">Faixa etária</label>
         <select name="guest-age-${i + 1}" id="guest-age-${i + 1}">
-        <option disabled selected>Faixa etária</option>
+        <option disabled selected>Escolhe a faixa etária</option>
               <option value="0-3 anos">0-3 anos</option>
               <option value="4-9 anos">4-9 anos</option>
               <option value="Adulto">Adulto (+10 anos)</option>
-        </select>
-         <select name="guest-diet-${i + 1}" id="guest-diet-${i + 1}">
-         <option disabled selected>Dieta</option>
-              <option value="Normal">Normal</option>
-              <option value="Vegetariano">Vegetariano</option>
-              <option value="Vegan">Vegan</option>
         </select>
       </div>
     `;

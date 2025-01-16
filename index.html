@@ -23,6 +23,7 @@
         <h1>Marta<img src="./img/couple.png" height="150px" />Daniel</h1>
         <p>Setembro 20, 2025</p>
         <h2 id="countdown"></h2>
+        <div id="tsparticles"></div>
       </div>
     </section>
     <section class="cerimony">
@@ -81,22 +82,36 @@
         <h1>Confirma a tua presença</h1>
         <h2>até 31 de agosto</h2>
         <form id="form" method="post">
-          <input type="text" placeholder="Nome" name="nome" />
-          <input type="email" placeholder="E-mail" name="email" />
-          <select name="idade" id="age">
-            <option disabled selected>Faixa etária</option>
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Escreve aqui o teu nome"
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Escreve aqui o teu e-mail"
+          />
+          <label for="diet">Intolerâncias alimentares</label>
+          <input
+            type="text"
+            name="diet"
+            placeholder="Escreve aqui as tuas intolerâncias alimentares"
+          />
+          <label for="age">Faixa etária</label>
+          <select name="age" id="age">
+            <option disabled selected>Escolhe a faixa etária</option>
             <option value="0-3 anos">0-3 anos</option>
             <option value="4-9 anos">4-9 anos</option>
             <option value="Adulto">Adulto (+10 anos)</option>
           </select>
-          <select name="dieta" id="diet">
-            <option disabled selected>Dieta</option>
-            <option value="Normal">Normal</option>
-            <option value="Vegetariano">Vegetariano</option>
-            <option value="Vegan">Vegan</option>
-          </select>
+
+          <label for="guests-number">Nº acompanhantes</label>
           <select name="guests-number" id="guests-number">
-            <option disabled selected>Nº acompanhantes</option>
+            <option disabled selected>Escolhe o numero de acompanhantes</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
