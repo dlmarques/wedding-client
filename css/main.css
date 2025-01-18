@@ -25,7 +25,7 @@ input[type="number"] {
 .hero {
   width: 100vw;
   height: 100vh;
-  background: url("../img/img4.jpeg") no-repeat center center / cover;
+  background: url("../img/img2.jpeg") no-repeat center center / cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +50,7 @@ input[type="number"] {
         font-size: 5rem;
       }
 
-      @media (max-width: 440px) {
+      @media (max-width: 520px) {
         font-size: 3.5rem;
       }
 
@@ -71,7 +71,7 @@ input[type="number"] {
       @media (max-width: 680px) {
         font-size: 1.5rem;
       }
-      @media (max-width: 440px) {
+      @media (max-width: 520px) {
         font-size: 1rem;
       }
     }
@@ -88,7 +88,7 @@ input[type="number"] {
       @media (max-width: 680px) {
         font-size: 2rem;
       }
-      @media (max-width: 440px) {
+      @media (max-width: 520px) {
         font-size: 1.5rem;
       }
     }
@@ -201,7 +201,15 @@ input[type="number"] {
 .confirmations {
   width: 100vw;
   height: 100vh;
-  background: url("../img/img2.jpeg") no-repeat center center / cover;
+  background: url("../img/img6.jpeg");
+  /* Center the image horizontally & vertically */
+  background-position: center center;
+
+  /* Prevent the image from repeating */
+  background-repeat: no-repeat;
+
+  /* Scale the image so it fits entirely in the container */
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
