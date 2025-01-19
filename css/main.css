@@ -65,12 +65,13 @@ input[type="number"] {
       }
     }
     h2 {
+      height: 30px;
       font-family: "Lato", sans-serif;
       font-size: 2rem;
       color: var(--light-beige);
       text-align: center;
       font-weight: 700;
-      padding-top: 32px;
+      overflow: hidden;
 
       @media (max-width: 680px) {
         font-size: 1.5rem;
@@ -82,15 +83,16 @@ input[type="number"] {
 
     p {
       font-family: "Lato", sans-serif;
-      font-size: 4rem;
+      font-size: 2rem;
       color: var(--light-beige);
       text-align: center;
       font-weight: 700;
+      padding-bottom: 48px;
       @media (max-width: 1024px) {
         font-size: 2.5rem;
       }
       @media (max-width: 680px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
       @media (max-width: 520px) {
         font-size: 1rem;
@@ -241,14 +243,14 @@ input[type="number"] {
 
     h2 {
       text-align: center;
-      font-family: "Meow Script", cursive;
+      font-family: "Lato", sans-serif;
       font-size: 2rem;
       color: var(--terracotta);
       margin-top: 0;
-      font-weight: 100;
+      font-weight: 300;
 
       @media (max-width: 768px) {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
     }
     form {

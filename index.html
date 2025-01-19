@@ -18,6 +18,10 @@
     <link rel="preload" href="./img/couple.png" as="image" />
     <link rel="preload" href="./img/img2.jpeg" as="image" />
     <link rel="preload" href="./img/img4.jpeg" as="image" />
+    <script src="./js/countdown.js"></script>
+    <script src="./js/maps.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/copyright.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   </head>
   <body>
@@ -26,7 +30,6 @@
         <h1>Marta<img src="./img/couple.png" height="150px" />Daniel</h1>
         <p>Sábado, 20 Setembro de 2025</p>
         <h2 id="countdown"></h2>
-        <div id="tsparticles"></div>
       </div>
     </section>
     <section class="cerimony">
@@ -104,14 +107,6 @@
             name="diet"
             placeholder="Escreve aqui as tuas intolerâncias alimentares"
           />
-          <label for="age">Faixa etária</label>
-          <select name="age" id="age">
-            <option disabled selected>Escolhe a faixa etária</option>
-            <option value="0-3 anos">0-3 anos</option>
-            <option value="4-9 anos">4-9 anos</option>
-            <option value="Adulto">Adulto (+10 anos)</option>
-          </select>
-
           <label for="guests-number">Nº acompanhantes</label>
           <select name="guests-number" id="guests-number">
             <option disabled selected>Escolhe o numero de acompanhantes</option>
@@ -143,9 +138,5 @@
       </div>
       <p style="text-align: center" id="copyright"></p>
     </footer>
-    <script src="./js/countdown.js"></script>
-    <script src="./js/maps.js"></script>
-    <script src="./js/form.js"></script>
-    <script src="./js/copyright.js"></script>
   </body>
 </html>
